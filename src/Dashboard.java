@@ -35,9 +35,11 @@ public class Dashboard extends HttpServlet {
                     String userId = request.getParameter("username");
                     
                     if (userId.equals("Ann") || userId.equals("Bill") || userId.equals("Chris") || userId.equals("Dave")) {
-                    	out.println("Your Username: " + userId + "<br>");
+                    	out.println("Successfully Logged In!");
                         out.println("<br>");
-                        out.println("<a href='logout'>Logout of session</a><br>");
+                    	out.println("  Your Username is: " + userId + "<br>");
+                        out.println("<br>");
+                        out.println("  <a href='logout'>Logout of session</a><br>");
                     } else {
                     	out.println("Error: Invalid Login.<br>");
                         out.println("<br>");
